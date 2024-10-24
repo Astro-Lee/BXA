@@ -443,7 +443,7 @@ class PlotBXA(PlotXspec):
         if colors is None:
             colors  = ['k']+[plt.cm.Set1(ii) for ii in range(len(idsp)-1)]
         if len(idsp)>1:
-            mcolors = [[c]*len(idsp) for c in colors]
+            mcolors = [[c]*(len(idsp)+1) for c in colors]
         else:
             mcolors = [None]
         # set up figure
